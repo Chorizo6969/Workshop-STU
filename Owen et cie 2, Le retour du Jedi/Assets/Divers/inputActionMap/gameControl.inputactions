@@ -97,7 +97,7 @@
                     "name": "moveInUI",
                     "type": "Value",
                     "id": "9e79542f-b307-4ae5-acd0-3a2e6db143e1",
-                    "expectedControlType": "Axis",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -115,23 +115,23 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "479d858d-44ab-4f0a-bace-d2cedf1a6006",
-                    "path": "<Gamepad>/leftStick/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "MANETTE",
-                    "action": "moveInUI",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "bd6c84d0-0b14-48b3-aa66-e3707d8def58",
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "MANETTE",
                     "action": "choice",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9b88422c-fa9b-427d-8047-34062f4df354",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "moveInUI",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
