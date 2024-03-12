@@ -1,0 +1,154 @@
+{
+    "name": "gameControl",
+    "maps": [
+        {
+            "name": "inGameControle",
+            "id": "eb95829a-e306-40be-98d9-bfc2eee4f2b9",
+            "actions": [
+                {
+                    "name": "moove",
+                    "type": "Value",
+                    "id": "2180d4e7-4a9a-44d4-ac7c-2b6c116e9cd1",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Primary weapon",
+                    "type": "Button",
+                    "id": "7a4ab719-9bdb-4dd4-b746-4f1871b3fc35",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Secondary weapon",
+                    "type": "Button",
+                    "id": "53a7b459-9099-4fbf-9a8f-246be18a24cf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ultime",
+                    "type": "Button",
+                    "id": "27073794-0d2a-458a-b7d5-b5a9e0f9291e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "53f088f5-ff60-41b5-b280-19939ae5cf67",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MANETTE",
+                    "action": "Primary weapon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ad62541f-acff-4e3a-9e3a-87faf80f2869",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MANETTE",
+                    "action": "Secondary weapon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3f42dfec-de93-4953-a4d5-1ee07169b490",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MANETTE",
+                    "action": "Ultime",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ade02d49-f32f-40ee-a264-e647832b189b",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MANETTE",
+                    "action": "moove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "MenuActionMap",
+            "id": "dc5e77e9-f745-4e68-84e0-9b22c00f1c06",
+            "actions": [
+                {
+                    "name": "moveInUI",
+                    "type": "Value",
+                    "id": "9e79542f-b307-4ae5-acd0-3a2e6db143e1",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "choice",
+                    "type": "Button",
+                    "id": "285b9945-da21-4dbf-b28b-d048960653c3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "479d858d-44ab-4f0a-bace-d2cedf1a6006",
+                    "path": "<Gamepad>/leftStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MANETTE",
+                    "action": "moveInUI",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bd6c84d0-0b14-48b3-aa66-e3707d8def58",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MANETTE",
+                    "action": "choice",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "MANETTE",
+            "bindingGroup": "MANETTE",
+            "devices": [
+                {
+                    "devicePath": "<XInputController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
