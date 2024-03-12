@@ -167,7 +167,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1658647233}
+      - m_Target: {fileID: 1658647236}
         m_TargetAssemblyTypeName: Control, Assembly-CSharp
         m_MethodName: OnMoove
         m_Mode: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
     m_ActionName: inGameControle/moove[/XInputControllerWindows/leftStick/up,/XInputControllerWindows/leftStick/down,/XInputControllerWindows/leftStick/left,/XInputControllerWindows/leftStick/right]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1658647233}
+      - m_Target: {fileID: 1658647236}
         m_TargetAssemblyTypeName: Control, Assembly-CSharp
         m_MethodName: OnShootWithPrimaryWeapon
         m_Mode: 0
@@ -435,7 +435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1064097658}
-  - component: {fileID: 1064097657}
+  - component: {fileID: 1064097659}
   m_Layer: 0
   m_Name: actionMapSwith
   m_TagString: Untagged
@@ -443,21 +443,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1064097657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1064097656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a63874bc6ab2c946b6892caad4ed0f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eventSystem: {fileID: 1867166533}
-  inGameActionMap: {fileID: -944628639613478452, guid: dee7f3ed55f91cb428d86022fa3e7c7a, type: 3}
-  _playerInput: {fileID: 215076847}
 --- !u!4 &1064097658
 Transform:
   m_ObjectHideFlags: 0
@@ -473,6 +458,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1064097659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064097656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1856e4d18b09e80448bfa25a854ad9e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSystem: {fileID: 1867166533}
+  inGameActionMap: {fileID: -944628639613478452, guid: dee7f3ed55f91cb428d86022fa3e7c7a, type: 3}
+  _playerInput: {fileID: 215076847}
 --- !u!1 &1658647232
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,7 +483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1658647235}
   - component: {fileID: 1658647234}
-  - component: {fileID: 1658647233}
+  - component: {fileID: 1658647236}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -491,24 +491,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1658647233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658647232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e60fc3210a70de4687377584882ccd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  isPrimaryWeaponFire: 0
-  primaryWeaponRoloadCooldown: 2
-  isStickUse: 0
-  primaryWeaponProjectil: {fileID: 2108187161660026122, guid: fa199e724820bf241854004b80ed0b01, type: 3}
-  mouvement: {x: 0, y: 0, z: 0}
 --- !u!212 &1658647234
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -550,7 +532,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d3ff4cc6470ab884098292eecb432ce0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5522d5bb7c7f7164bb7b14b07d310af3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -576,6 +558,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1658647236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658647232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d29e17d72c3d46648adb2292e84466c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  isPrimaryWeaponFire: 0
+  currenttime: 0
+  primaryWeaponRoloadCooldown: 0.7
+  isStickUse: 0
+  primaryWeaponProjectil: {fileID: 6841074670683464052, guid: 2b95c3f866850f244a3710ae9093b3a5, type: 3}
+  mouvement: {x: 0, y: 0, z: 0}
 --- !u!1 &1867166533
 GameObject:
   m_ObjectHideFlags: 0
