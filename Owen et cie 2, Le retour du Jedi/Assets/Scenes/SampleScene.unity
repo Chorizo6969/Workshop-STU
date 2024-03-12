@@ -198,7 +198,19 @@ MonoBehaviour:
     m_ActionId: 7a4ab719-9bdb-4dd4-b746-4f1871b3fc35
     m_ActionName: inGameControle/Primary weapon[/XInputControllerWindows/buttonEast]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1658647236}
+        m_TargetAssemblyTypeName: Control, Assembly-CSharp
+        m_MethodName: OnShootWithSecondaryWeapon
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 53a7b459-9099-4fbf-9a8f-246be18a24cf
     m_ActionName: inGameControle/Secondary weapon[/XInputControllerWindows/buttonNorth]
   - m_PersistentCalls:
@@ -532,7 +544,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5522d5bb7c7f7164bb7b14b07d310af3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16de3e26b6a1048489d82c0459597d7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -551,13 +563,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658647232}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -4.7, y: -0.47, z: 0}
-  m_LocalScale: {x: 0.076844566, y: 0.076844566, z: 0.076844566}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1658647236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,17 +583,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  currenttime1: 0
-  currenttime2: 0
-  isPrimaryWeaponFire: 0
-  primaryWeaponRoloadCooldown: 0.7
-  primaryWeaponSpread: 0
-  isSecondaryWeaponFire: 0
-  secondaryWeaponRoloadCooldown: 0
-  secondaryWeaponSpread: 0
+  primaryWeaponRoloadCooldown: 0.5
+  primaryWeaponSpread: 5
+  secondaryWeaponRoloadCooldown: 1.2
+  secondaryWeaponSpread: 40
   secondWeaponId: 0
-  isStickUse: 0
-  primaryWeaponProjectile: {fileID: 0}
+  primaryWeaponProjectile: {fileID: 6841074670683464052, guid: 2b95c3f866850f244a3710ae9093b3a5, type: 3}
+  secondaryWeaponProjectile: {fileID: 0}
+  projectilesList:
+  - {fileID: 5648375429497094758, guid: e5cc522aa85236443a015a42d4669796, type: 3}
   mouvement: {x: 0, y: 0, z: 0}
 --- !u!1 &1867166533
 GameObject:
