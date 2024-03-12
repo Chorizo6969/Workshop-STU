@@ -564,7 +564,7 @@ Transform:
   m_GameObject: {fileID: 1658647232}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -4.7, y: -0.47, z: 0}
+  m_LocalPosition: {x: -7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -583,15 +583,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  isPrimaryWeaponFire: 0
   primaryWeaponRoloadCooldown: 0.5
   primaryWeaponSpread: 5
-  secondaryWeaponRoloadCooldown: 1.2
-  secondaryWeaponSpread: 40
-  secondWeaponId: 0
+  isSecondaryWeaponFire: 0
+  secondaryWeaponRoloadCooldown: 0
+  secondaryWeaponSpread: 0
+  secondWeaponId: 1
   primaryWeaponProjectile: {fileID: 6841074670683464052, guid: 2b95c3f866850f244a3710ae9093b3a5, type: 3}
   secondaryWeaponProjectile: {fileID: 0}
   projectilesList:
   - {fileID: 5648375429497094758, guid: e5cc522aa85236443a015a42d4669796, type: 3}
+  - {fileID: 4089271812887221621, guid: 1a8e519a9cd40ab429c4ed983537dd20, type: 3}
   mouvement: {x: 0, y: 0, z: 0}
 --- !u!1 &1867166533
 GameObject:
