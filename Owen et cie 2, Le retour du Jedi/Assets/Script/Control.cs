@@ -11,11 +11,11 @@ public class Control : MonoBehaviour
     private float currenttime1;
     private float currenttime2;
 
-    private bool isPrimaryWeaponFire;
+    [SerializeField] private bool isPrimaryWeaponFire;
     public float primaryWeaponRoloadCooldown;
     public int primaryWeaponSpread;
 
-    private bool isSecondaryWeaponFire;
+    [SerializeField] private bool isSecondaryWeaponFire;
     public float secondaryWeaponRoloadCooldown;
     public int secondaryWeaponSpread;
 
@@ -30,7 +30,26 @@ public class Control : MonoBehaviour
 
     private void Start()
     {
-        secondaryWeaponProjectile = projectilesList[secondWeaponId];
+        switch (secondWeaponId)
+        {
+            case 0:
+                secondaryWeaponProjectile = projectilesList[secondWeaponId];
+                secondaryWeaponRoloadCooldown = 1;
+                secondaryWeaponSpread = 40;
+                break;
+
+            case 1:
+                secondaryWeaponProjectile = projectilesList[secondWeaponId];
+                secondaryWeaponRoloadCooldown = 1.5f;
+                secondaryWeaponSpread = 0;
+                break;
+
+            case 2:
+                secondaryWeaponProjectile = projectilesList[secondWeaponId];
+                secondaryWeaponRoloadCooldown = 1.5f;
+                secondaryWeaponSpread = 0;
+                break;
+        }
     }
 
     public void OnMoove(InputAction.CallbackContext callbackContext)
@@ -106,8 +125,13 @@ public class Control : MonoBehaviour
                     for (int i = 0; i < 10; i++)
                     {
                         instantiateProjectil(secondaryWeaponProjectile, secondaryWeaponSpread);
+                        
                     }
 
+                }
+                else
+                {
+                    instantiateProjectil(secondaryWeaponProjectile, secondaryWeaponSpread);
                 }
                 currenttime2 = 0;
             }
