@@ -571,11 +571,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  currenttime1: 0
+  currenttime2: 0
   isPrimaryWeaponFire: 0
-  currenttime: 0
   primaryWeaponRoloadCooldown: 0.7
+  primaryWeaponSpread: 0
+  isSecondaryWeaponFire: 0
+  secondaryWeaponRoloadCooldown: 0
+  secondaryWeaponSpread: 0
+  secondWeaponId: 0
   isStickUse: 0
-  primaryWeaponProjectil: {fileID: 6841074670683464052, guid: 2b95c3f866850f244a3710ae9093b3a5, type: 3}
+  primaryWeaponProjectile: {fileID: 0}
   mouvement: {x: 0, y: 0, z: 0}
 --- !u!1 &1867166533
 GameObject:
