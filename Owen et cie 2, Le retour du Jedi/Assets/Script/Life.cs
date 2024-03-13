@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,13 +18,19 @@ public class Life : MonoBehaviour //Script qui gère la vie du joueur, les degats
     {
         Currenthealth -= damages;
         slider.value = Currenthealth;
+        slider.DOValue(Currenthealth, 0.2f).SetEase(Ease.OutSine);
     }
     public void Heal(int soin) //Fonction qui ajoute x pv a la vie du joueur
     {
-        if (Currenthealth + soin < Max_healthlife)
+        if (Currenthealth + soin <= Max_healthlife)
         {
             Currenthealth += soin;
-            slider.value = Currenthealth;
+            slider.DOValue(Currenthealth, 0.2f).SetEase(Ease.OutQuint); //Twin de la vie du joueur qui ) permet pendant une transition de 0.2s d'augmenter la vie
+        }
+        else if(Currenthealth + soin > Max_healthlife)
+        {
+            Currenthealth = Max_healthlife;
+            slider.DOValue(Currenthealth, 0.2f).SetEase(Ease.OutQuint);
         }
     }
 }
