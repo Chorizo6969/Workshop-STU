@@ -18,5 +18,10 @@ public class inflictdamage : MonoBehaviour
             collision.gameObject.GetComponent<entityLife>().life -= damage;
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.tag == "Player" && collision.gameObject.name == "Player")
+        {
+            FindAnyObjectByType<Life>().take_damages(damage);
+        }
     }
 }

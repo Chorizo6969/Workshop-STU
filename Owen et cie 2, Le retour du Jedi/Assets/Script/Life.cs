@@ -7,6 +7,8 @@ public class Life : MonoBehaviour //Script qui gère la vie du joueur, les degats
     public int Max_healthlife = 100;
     public int Currenthealth;
     public Slider slider; // Fait le lien entre mes valeurs et le slider
+    public float DOTweenSpeed;
+    public Ease functionName;
 
     public void Start()
     {
@@ -17,8 +19,8 @@ public class Life : MonoBehaviour //Script qui gère la vie du joueur, les degats
     public void take_damages(int damages) //Fonction qui soustraie x pv a la vie du joueur
     {
         Currenthealth -= damages;
-        slider.value = Currenthealth;
-        slider.DOValue(Currenthealth, 0.2f).SetEase(Ease.OutSine);
+        slider.DOValue(Currenthealth, DOTweenSpeed).SetEase(functionName);
+        //slider.value = Currenthealth;
     }
     public void Heal(int soin) //Fonction qui ajoute x pv a la vie du joueur
     {
