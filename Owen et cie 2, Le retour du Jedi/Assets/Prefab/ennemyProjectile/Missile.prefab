@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4596090127177296776}
   - component: {fileID: 1186698386267800548}
   - component: {fileID: 441397040474226690}
+  - component: {fileID: 3050706423603933022}
   m_Layer: 0
   m_Name: Missile
-  m_TagString: ennemyThings
+  m_TagString: ennemyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,3 +145,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.36, y: 3.69}
   m_EdgeRadius: 0
+--- !u!114 &3050706423603933022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195155312547050428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3efd7ac8948993d4cba7b32939b66248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Player
+  damage: 10

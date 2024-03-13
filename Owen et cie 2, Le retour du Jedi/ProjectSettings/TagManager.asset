@@ -7,6 +7,7 @@ TagManager:
   - ennemyThings
   - ennemyShield
   - playerProjectile
+  - ennemyProjectile
   layers:
   - Default
   - TransparentFX
