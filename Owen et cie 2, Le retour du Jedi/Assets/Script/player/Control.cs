@@ -6,10 +6,12 @@ using UnityEngine.InputSystem;
 
 public class Control : MonoBehaviour
 {
+    public Vector3 mouvement;    
     internal Vector2 InputValue;
     public int speed;
-    private float currenttime1;
-    private float currenttime2;
+    private float reloadTimerFisrtWeapon = 10;
+    private float reloadTimeSecondWeapon = 10;
+    public int killNeedForUlti = 20;
 
     [SerializeField] private bool isPrimaryWeaponFire;
     public float primaryWeaponRoloadCooldown;
@@ -20,13 +22,14 @@ public class Control : MonoBehaviour
     public int secondaryWeaponSpread;
 
     public int secondWeaponId;
+    public int UltId;
 
     private bool isStickUse = false;
     public GameObject primaryWeaponProjectile;
     public GameObject secondaryWeaponProjectile;
     public List<GameObject> projectilesList;
-    
-    public Vector3 mouvement;
+    public GameObject ultObject;
+    public List<GameObject> ultObjectList;
 
     private void Start()
     {
@@ -48,6 +51,16 @@ public class Control : MonoBehaviour
                 secondaryWeaponProjectile = projectilesList[secondWeaponId];
                 secondaryWeaponRoloadCooldown = 1.5f;
                 secondaryWeaponSpread = 0;
+                break;
+        }
+
+        switch (UltId)
+        {
+            case 0:
+                ultObject = ultObjectList[UltId]; 
+                break;
+            case 1:
+                ultObject = ultObjectList[UltId];
                 break;
         }
     }
@@ -96,7 +109,16 @@ public class Control : MonoBehaviour
 
     public void OnUltime(InputAction.CallbackContext callbackContext)
     {
-
+        if (callbackContext.started)
+        {
+            if (GetComponent<killCount>().ennemiKillCount >= killNeedForUlti)
+            {
+                GameObject _ult = Instantiate(ultObject);
+                _ult.transform.position = transform.position;
+                _ult.transform.parent = transform;
+                killNeedForUlti += killNeedForUlti;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -106,19 +128,19 @@ public class Control : MonoBehaviour
             transform.position = transform.position + (speed * mouvement * Time.deltaTime);
         }
 
-        currenttime1 += Time.deltaTime;
-        currenttime2 += Time.deltaTime;
+        reloadTimerFisrtWeapon += Time.deltaTime;
+        reloadTimeSecondWeapon += Time.deltaTime;
         if (isPrimaryWeaponFire)
         { 
-            if (currenttime1 > primaryWeaponRoloadCooldown)
+            if (reloadTimerFisrtWeapon > primaryWeaponRoloadCooldown)
             {
                 instantiateProjectil(primaryWeaponProjectile, primaryWeaponSpread);
-                currenttime1 = 0;
+                reloadTimerFisrtWeapon = 0;
             }
         }
         if (isSecondaryWeaponFire)
         {
-            if (currenttime2 > secondaryWeaponRoloadCooldown)
+            if (reloadTimeSecondWeapon > secondaryWeaponRoloadCooldown)
             {
                 switch (secondWeaponId)
                 {
@@ -137,7 +159,7 @@ public class Control : MonoBehaviour
                         instantiateMissile();
                         break;
                 }
-                currenttime2 = 0;
+                reloadTimeSecondWeapon = 0;
             }
         }
     }

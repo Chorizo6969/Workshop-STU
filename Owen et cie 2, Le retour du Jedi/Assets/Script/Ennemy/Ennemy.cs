@@ -34,4 +34,9 @@ public class Ennemy : MonoBehaviour //Script qui gère le comportement de l'ennem
         yield return new WaitForSeconds(cooldown);
         StartCoroutine(Attaque());
     }
+
+    public void OnDeath()
+    {
+        FindAnyObjectByType<killCount>().gameObject.GetComponent<killCount>().ennemiKillCount++;
+    }
 }

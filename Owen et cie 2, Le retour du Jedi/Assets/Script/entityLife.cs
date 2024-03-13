@@ -10,6 +10,10 @@ public class entityLife : MonoBehaviour
     {
         if (life <= 0)
         {
+            if (GetComponent<Ennemy>())
+            {
+                GetComponent<Ennemy>().OnDeath();
+            }
             Destroy(gameObject);
         }
     }

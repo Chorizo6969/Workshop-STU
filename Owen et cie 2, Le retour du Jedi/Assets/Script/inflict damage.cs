@@ -9,7 +9,7 @@ public class inflictdamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "ennemyShield")
+        if (collision.tag == "shield")
         {
             Destroy(gameObject);
         }

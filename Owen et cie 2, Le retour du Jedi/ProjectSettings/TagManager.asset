@@ -5,9 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - ennemyThings
-  - ennemyShield
   - playerProjectile
   - ennemyProjectile
+  - playerShield
+  - ennemiShield
   layers:
   - Default
   - TransparentFX
