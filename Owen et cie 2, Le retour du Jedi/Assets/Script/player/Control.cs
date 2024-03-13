@@ -120,18 +120,22 @@ public class Control : MonoBehaviour
         {
             if (currenttime2 > secondaryWeaponRoloadCooldown)
             {
-                if (secondWeaponId == 0)
+                switch (secondWeaponId)
                 {
-                    for (int i = 0; i < 10; i++)
-                    {
-                        instantiateProjectil(secondaryWeaponProjectile, secondaryWeaponSpread);
-                        
-                    }
+                    case 0:
+                        for (int i = 0; i < 10; i++)
+                        {
+                            instantiateProjectil(secondaryWeaponProjectile, secondaryWeaponSpread);
+                        }
+                        break;
 
-                }
-                else
-                {
-                    instantiateProjectil(secondaryWeaponProjectile, secondaryWeaponSpread);
+                    case 1:
+                        instantiateProjectil(secondaryWeaponProjectile, secondaryWeaponSpread);
+                        break;
+
+                    case 2:
+                        instantiateMissile();
+                        break;
                 }
                 currenttime2 = 0;
             }
@@ -143,5 +147,10 @@ public class Control : MonoBehaviour
         GameObject newBal = Instantiate(projectile);
         newBal.GetComponent<projectileMove>().spread = _spread;
         newBal.transform.position = transform.position;
+    }
+    private void instantiateMissile()
+    {
+        GameObject newMissile = Instantiate(secondaryWeaponProjectile);
+        newMissile.transform.position = transform.position;
     }
 }

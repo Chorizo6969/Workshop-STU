@@ -35,4 +35,12 @@ public class homingMissile : MonoBehaviour
         Vector3 _directionToGo = Vector3.MoveTowards(transform.position, positionOfTargetToKill, speed * Time.deltaTime);
         transform.position = _directionToGo;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "ennemyThings")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
