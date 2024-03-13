@@ -16,10 +16,13 @@ public class inflictdamage : MonoBehaviour
         else if (collision.gameObject.tag == targetTag)
         {
             collision.gameObject.GetComponent<entityLife>().life -= damage;
-            Destroy(gameObject);
+            if (gameObject.name != "laser(Clone)" && gameObject.layer != 6)
+            {
+                Destroy(gameObject);
+            }
         }
 
-        if (collision.gameObject.tag == "Player" && collision.gameObject.name == "Player")
+        if (collision.gameObject.tag == "Player" && collision.gameObject.name == "Player" && gameObject.tag != "playerProjectile")
         {
             FindAnyObjectByType<Life>().take_damages(damage);
         }

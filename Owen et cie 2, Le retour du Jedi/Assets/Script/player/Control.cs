@@ -164,7 +164,7 @@ public class Control : MonoBehaviour
         }
     }
 
-    private void instantiateProjectil(GameObject projectile, int _spread)
+    public void instantiateProjectil(GameObject projectile, int _spread)
     {
         GameObject newBal = Instantiate(projectile);
         newBal.GetComponent<projectileMove>().spread = _spread;
@@ -174,5 +174,10 @@ public class Control : MonoBehaviour
     {
         GameObject newMissile = Instantiate(secondaryWeaponProjectile);
         newMissile.transform.position = transform.position;
+    }
+
+    public void DebugLogTest()
+    {
+        Debug.Log("MEGA POMPE");
     }
 }

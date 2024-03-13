@@ -5,4 +5,5 @@ using UnityEngine;
 public class killCount : MonoBehaviour
 {
     public int ennemiKillCount;
+    public int killForNextUlt;
 }

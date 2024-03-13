@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5995195969457998462}
   - component: {fileID: 4018921858919925450}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 5950950334519004266}
   - component: {fileID: -1420828100271586090}
   - component: {fileID: 8917776184554159310}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: laser_Ennemy
   m_TagString: ennemyThings
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3578563174554571542}
   - component: {fileID: 646993688547097131}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

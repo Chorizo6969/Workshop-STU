@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 678300694097046373}
   - component: {fileID: 2669836769685801668}
   m_Layer: 0
-  m_Name: Square
+  m_Name: laser
   m_TagString: playerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
