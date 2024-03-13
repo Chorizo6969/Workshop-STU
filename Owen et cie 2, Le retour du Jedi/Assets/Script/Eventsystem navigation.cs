@@ -15,7 +15,7 @@ public class Eventsystemnavigation : MonoBehaviour
     public void Change_Weapons()
     {
         var eventSystem = EventSystem.current;
-        eventSystem.SetSelectedGameObject(Level_1, new BaseEventData(eventSystem));
+        eventSystem.SetSelectedGameObject(Weapons, new BaseEventData(eventSystem));
     }
 
     /*public void Change_Option()
