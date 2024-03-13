@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9160678709277527256}
   - component: {fileID: 2450861992705128597}
   - component: {fileID: 3585907124388390699}
+  - component: {fileID: 266025182176282311}
   m_Layer: 0
   m_Name: playerHomingMissile
   m_TagString: playerProjectile
@@ -173,3 +174,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.18, y: 0.51}
   m_EdgeRadius: 0
+--- !u!114 &266025182176282311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6366455097178760050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3efd7ac8948993d4cba7b32939b66248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: ennemyThings
+  damage: 10

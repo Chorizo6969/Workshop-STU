@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 4252651944865527777}
   - component: {fileID: 3703399908721048949}
   - component: {fileID: 5950950334519004266}
+  - component: {fileID: -1420828100271586090}
+  - component: {fileID: 8917776184554159310}
   m_Layer: 0
   m_Name: laser_Ennemy
   m_TagString: ennemyThings
@@ -168,7 +170,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.029101327, y: -0.5238232}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -179,8 +181,35 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9417974, y: 1.3346652}
   m_EdgeRadius: 0
+--- !u!114 &-1420828100271586090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514420886908366750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3efd7ac8948993d4cba7b32939b66248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Player
+  damage: 10
+--- !u!114 &8917776184554159310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514420886908366750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d29fe898f8cc445860404df5fc7d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 80
 --- !u!1 &9131033245239599561
 GameObject:
   m_ObjectHideFlags: 0
