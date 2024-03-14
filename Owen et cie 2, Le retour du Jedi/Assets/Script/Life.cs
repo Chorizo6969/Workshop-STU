@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Life : MonoBehaviour //Script qui gère la vie du joueur, les degats comme les soins
 {
-    public int Max_healthlife = 100;
+    public int Max_healthlife = 200;
     public int Currenthealth;
     public Slider slider; // Fait le lien entre mes valeurs et le slider
     public float DOTweenSpeed;
