@@ -9,6 +9,7 @@ TagManager:
   - ennemyProjectile
   - playerShield
   - ennemiShield
+  - Heal
   layers:
   - Default
   - TransparentFX

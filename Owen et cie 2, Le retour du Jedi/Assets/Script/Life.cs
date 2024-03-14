@@ -34,8 +34,8 @@ public class Life : MonoBehaviour //Script qui gère la vie du joueur, les degats
         if (Currenthealth + soin <= Max_healthlife)
         { 
             Currenthealth += soin;
-            slider.DOValue(Currenthealth, 0.2f).SetEase(Ease.OutQuint); //Twin de la vie du joueur qui ) permet pendant une transition de 0.2s d'augmenter la vie
-            slider_latence.value = Currenthealth;
+            slider.DOValue(Currenthealth, 0.2f).SetEase(Ease.OutQuint); //Twin de la vie du joueur qui  permet pendant une transition de 0.2s d'augmenter la vie
+            //slider_latence.value = Currenthealth;
         }
         else if(Currenthealth + soin > Max_healthlife)
         {

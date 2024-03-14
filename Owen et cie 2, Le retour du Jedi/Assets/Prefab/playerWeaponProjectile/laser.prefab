@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: ennemyThings
-  damage: 10
+  damage: 20
 --- !u!61 &678300694097046373
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ public class projectileMove : MonoBehaviour
         Vector3 direction = new Vector3(1, fireSpread, 0);
         direction.Normalize();
         transform.position += direction * speed * Time.deltaTime;
-        if (transform.position.x >= 20)
+        if (transform.position.x >= 9.39)
         {
             Destroy(gameObject);
         }
