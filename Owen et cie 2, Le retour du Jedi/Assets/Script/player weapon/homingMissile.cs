@@ -33,13 +33,11 @@ public class homingMissile : MonoBehaviour
 
         if (!target)
         {
-            Debug.Log("J'AI PAS DE CIBLE FDP");
             Vector3 _directionToGo = Vector3.MoveTowards(transform.position, lastTargetPosition, speed * Time.deltaTime);
             transform.position = _directionToGo;
         }
         else
         {
-            Debug.Log("Un connard va bientot crever...");
             positionOfTargetToKill = target.transform.position;
             Vector3 _directionToGo = Vector3.MoveTowards(transform.position, lastTargetPosition, speed * Time.deltaTime);
             transform.position = _directionToGo;
@@ -57,7 +55,6 @@ public class homingMissile : MonoBehaviour
 
     IEnumerator FindTarget()
     {
-        Debug.Log("TROUVE UNE CIBLE CONNARD");
         if (target == null)
         {
             target = FindAnyObjectByType<Ennemy>().gameObject;

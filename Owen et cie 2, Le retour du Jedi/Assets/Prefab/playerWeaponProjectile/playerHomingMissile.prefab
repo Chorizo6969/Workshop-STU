@@ -102,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   positionOfTargetToKill: {x: 0, y: 0, z: 0}
+  lastTargetPosition: {x: 0, y: 0, z: 0}
+  target: {fileID: 0}
 --- !u!50 &2450861992705128597
 Rigidbody2D:
   serializedVersion: 4
