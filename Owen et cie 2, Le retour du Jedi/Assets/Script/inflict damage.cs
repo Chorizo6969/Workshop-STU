@@ -24,7 +24,7 @@ public class inflictdamage : MonoBehaviour
 
         if (collision.gameObject.tag == "Player" && collision.gameObject.name == "Player" && gameObject.tag != "playerProjectile")
         {
-            //FindAnyObjectByType<Life>().take_damages(damage);
+            FindAnyObjectByType<Life>().take_damages(damage);
         }
     }
 }
