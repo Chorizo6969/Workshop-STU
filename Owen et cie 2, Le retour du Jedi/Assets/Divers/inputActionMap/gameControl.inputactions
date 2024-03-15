@@ -56,11 +56,33 @@
                 },
                 {
                     "name": "",
+                    "id": "1a850377-ffcd-411c-85b6-c56c7d900a51",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary weapon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ad62541f-acff-4e3a-9e3a-87faf80f2869",
                     "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "MANETTE",
+                    "action": "Secondary weapon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d9f898b2-35af-4935-a6b3-a1fe21fc3c09",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Secondary weapon",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -78,11 +100,33 @@
                 },
                 {
                     "name": "",
+                    "id": "01c497c7-2c19-43a1-96fb-3ca7f1020d68",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Ultime",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ade02d49-f32f-40ee-a264-e647832b189b",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "MANETTE",
+                    "action": "moove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "45e625c9-f9d0-412b-95de-bae12a649cf3",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "moove",
                     "isComposite": false,
                     "isPartOfComposite": false

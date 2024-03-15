@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouvement: {x: 0, y: 0, z: 0}
   speed: 5
-  killNeedForUlti: 3
+  killNeedForUlti: 8
   isPrimaryWeaponFire: 0
   primaryWeaponRoloadCooldown: 0.2
   primaryWeaponSpread: 5
@@ -220,8 +220,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ennemiKillCount: 0
-  killForNextUlt: 0
   border: {fileID: 0}
+  border_2: {fileID: 0}
+  Sprite_ulti1: {fileID: 0}
+  Sprite_ulti2: {fileID: 0}
+  ulti: {fileID: 0}
   sprite_0: {fileID: 0}
   sprite_1: {fileID: 0}
   sprite_2: {fileID: 0}

@@ -11,7 +11,7 @@ public class spawnerQuentin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SpawnDeQuentin());
+        StartCoroutine(ATTEND());
     }
 
     // Update is called once per frame
@@ -35,4 +35,8 @@ public class spawnerQuentin : MonoBehaviour
         yield return new WaitForSeconds(3); StartCoroutine(SpawnDeQuentin());
     }
 
+    IEnumerator ATTEND()
+    {
+        yield return new WaitForSeconds (10); StartCoroutine(SpawnDeQuentin());
+    }
 }

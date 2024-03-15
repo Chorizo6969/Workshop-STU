@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class killCount : MonoBehaviour
 {
     public int ennemiKillCount;
-    public int killForNextUlt;
+
     public GameObject border;
     public GameObject border_2;
     public GameObject Sprite_ulti1;

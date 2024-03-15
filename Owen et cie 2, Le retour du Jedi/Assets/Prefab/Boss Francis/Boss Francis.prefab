@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   quentin: {fileID: 2131910644647487534, guid: 7314a7cb8badde7478f70639dc7e2815, type: 3}
+  moveY: 1
 --- !u!1 &8962775200277228109
 GameObject:
   m_ObjectHideFlags: 0
@@ -56,6 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4751386201894286342}
   - component: {fileID: 5724843165903083302}
+  - component: {fileID: 6296882946781976814}
   m_Layer: 0
   m_Name: Boss Francis
   m_TagString: Untagged
@@ -131,3 +133,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6296882946781976814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8962775200277228109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857bf732062b10843b8daf6514e43879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barre: {fileID: 4679677548760038369, guid: 44e1d8e2159cbc448831aef0fa2f7499, type: 3}

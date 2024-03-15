@@ -133,6 +133,7 @@ MonoBehaviour:
   preAttackObject: {fileID: 7018246025110225562, guid: b9cb3cb2e935e864c850631eb83d5432, type: 3}
   preattackSpawnPoint: {fileID: 2627419464859284954}
   missileProjectile: {fileID: 2662992096556212423, guid: cf352795ee6c9e447b05ecd625cd5519, type: 3}
+  BIGMISSILE: {fileID: 6801459337641522310, guid: 23acc26c1e15c6b4ebb8187c4c3b7e47, type: 3}
   fireCount: 0
 --- !u!114 &8064519339641237977
 MonoBehaviour:

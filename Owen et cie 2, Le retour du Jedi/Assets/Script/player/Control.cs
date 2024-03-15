@@ -11,7 +11,7 @@ public class Control : MonoBehaviour
     public int speed;
     private float reloadTimerFisrtWeapon = 10;
     private float reloadTimeSecondWeapon = 10;
-    public int killNeedForUlti = 20;
+    public int killNeedForUlti = 8;
 
     [SerializeField] private bool isPrimaryWeaponFire;
     public float primaryWeaponRoloadCooldown;
@@ -116,7 +116,7 @@ public class Control : MonoBehaviour
                 GameObject _ult = Instantiate(ultObject);
                 _ult.transform.position = transform.position;
                 _ult.transform.parent = transform;
-                killNeedForUlti += killNeedForUlti;
+                GetComponent<killCount>().ennemiKillCount = 0;
             }
         }
     }

@@ -7,6 +7,7 @@ public class missileRain : MonoBehaviour
     public GameObject preAttackObject;
     public GameObject preattackSpawnPoint;
     public GameObject missileProjectile;
+    public GameObject BIGMISSILE;
     public int fireCount;
 
     private void Start()
@@ -26,6 +27,8 @@ public class missileRain : MonoBehaviour
     {
         int countLimit = Random.Range(10, 20);
         StartCoroutine(AttackDelay(preattackSpawnPoint.transform.position));
+        new WaitForSeconds(2);
+        Instantiate(BIGMISSILE);
         yield return new WaitForSeconds(7.5f);
         StartCoroutine(FireMissileRain(countLimit));
         
