@@ -15,8 +15,11 @@ public class entityLife : MonoBehaviour
                 GetComponent<Ennemy>().OnDeath();
             }
             Destroy(gameObject);
-            loose.Change_WeaponsL2();
-            panel_retry.SetActive(true);
+            if (gameObject.tag == "Player")
+            {
+                loose.Change_WeaponsL2();
+                panel_retry.SetActive(true);
+            }
         }
     }
 }

@@ -104,6 +104,7 @@ MonoBehaviour:
   positionOfTargetToKill: {x: 0, y: 0, z: 0}
   lastTargetPosition: {x: 0, y: 0, z: 0}
   target: {fileID: 0}
+  distance: 0
 --- !u!50 &2450861992705128597
 Rigidbody2D:
   serializedVersion: 4
@@ -190,3 +191,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTag: ennemyThings
   damage: 10
+  healthBarName: 

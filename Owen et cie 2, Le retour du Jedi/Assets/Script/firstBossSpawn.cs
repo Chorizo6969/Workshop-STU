@@ -13,6 +13,7 @@ public class firstBossSpawn : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            Debug.Log("ARRETE DE TE FOUTRE DE MA GUEULE");
             Destroy(Destroy_song);
             Boss_song.Play();
             Instantiate(bossSpawn);

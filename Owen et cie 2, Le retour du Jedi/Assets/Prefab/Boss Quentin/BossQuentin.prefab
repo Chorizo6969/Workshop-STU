@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6357674424800453586}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: spawnerZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6063050523515680487}
   - component: {fileID: 4054919151261287410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: colliderGenouQuentin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8244783632956930340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zone (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6823176943606065573}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zone (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,8 @@ GameObject:
   - component: {fileID: 8043810926782340675}
   - component: {fileID: -5197836197480928821}
   - component: {fileID: 8820008910420268260}
-  m_Layer: 0
+  - component: {fileID: 6923774445170171253}
+  m_Layer: 6
   m_Name: BossQuentin
   m_TagString: boss
   m_Icon: {fileID: 0}
@@ -328,6 +329,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 2000
+  panel_retry: {fileID: 0}
+  loose: {fileID: 0}
 --- !u!114 &8820008910420268260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +346,51 @@ MonoBehaviour:
   targetTag: Player
   damage: 0
   healthBarName: Health Quentin
+--- !u!61 &6923774445170171253
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5579138981359100360}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 23.80219, y: 39.06}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 23.80219, y: 39.06}
+  m_EdgeRadius: 0
 --- !u!1 &5895442841314054792
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 58429983435890268}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zone (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8969370102593438574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zone (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8308008744358570176}
   - component: {fileID: 6745359132764140772}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: colliderQuentin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,6 +592,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: shield_Ennemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3197546355559071550, guid: bc82b39c64137cd43a379745f23c38fa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438226036475794986, guid: bc82b39c64137cd43a379745f23c38fa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -613,6 +669,14 @@ PrefabInstance:
     - target: {fileID: 2032937851412380556, guid: bc82b39c64137cd43a379745f23c38fa, type: 3}
       propertyPath: m_Name
       value: shield_Ennemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197546355559071550, guid: bc82b39c64137cd43a379745f23c38fa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438226036475794986, guid: bc82b39c64137cd43a379745f23c38fa, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -684,6 +748,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: shield_Ennemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3197546355559071550, guid: bc82b39c64137cd43a379745f23c38fa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438226036475794986, guid: bc82b39c64137cd43a379745f23c38fa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -753,6 +825,14 @@ PrefabInstance:
     - target: {fileID: 2032937851412380556, guid: bc82b39c64137cd43a379745f23c38fa, type: 3}
       propertyPath: m_Name
       value: shield_Ennemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197546355559071550, guid: bc82b39c64137cd43a379745f23c38fa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438226036475794986, guid: bc82b39c64137cd43a379745f23c38fa, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

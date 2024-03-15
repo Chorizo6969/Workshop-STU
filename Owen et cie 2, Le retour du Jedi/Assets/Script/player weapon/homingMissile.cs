@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class homingMissile : MonoBehaviour
 {
-    public int speed;
+    public float speed;
     public Vector3 positionOfTargetToKill;
     public Vector3 lastTargetPosition;
     public GameObject target;
+    public float distance;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,21 +32,25 @@ public class homingMissile : MonoBehaviour
         // Appliquez la nouvelle rotation à l'objet
         this.transform.rotation = newRotation;
 
-        if (!target)
-        {
-            Vector3 _directionToGo = Vector3.MoveTowards(transform.position, lastTargetPosition, speed * Time.deltaTime);
-            transform.position = _directionToGo;
-        }
-        else
+        if (target)
         {
             positionOfTargetToKill = target.transform.position;
             Vector3 _directionToGo = Vector3.MoveTowards(transform.position, lastTargetPosition, speed * Time.deltaTime);
             transform.position = _directionToGo;
         }
+        if (!target)
+        {
+            Vector3 _directionToGo = Vector3.MoveTowards(transform.position, lastTargetPosition, speed * Time.deltaTime);
+            transform.position = _directionToGo;
+        }
         lastTargetPosition = positionOfTargetToKill;
-
+        distance = (gameObject.transform.position - target.transform.position).magnitude;
         foreach (GameObject ennemy in FindAnyObjectByType<playerMissilePerimeter>().ennemy)
         {
+            if (distance > (gameObject.transform.position - ennemy.transform.position).magnitude)
+            {
+                target = ennemy;
+            }
             Ray ray = new Ray(transform.localPosition, ennemy.transform.localPosition);
             Debug.DrawRay(transform.localPosition, ennemy.transform.localPosition - transform.localPosition, Color.red);
         }
@@ -61,13 +66,14 @@ public class homingMissile : MonoBehaviour
 
     IEnumerator FindTarget()
     {
-        if (target == null)
+        Debug.Log("TROUVE UNE CBLE");
+        if (target == null && FindAnyObjectByType<playerMissilePerimeter>().ennemy.Count >0)
         {
-            
+            Debug.Log("J'Ai PAS DE CIBLE DONC JE CHERCHE");
 
             target = FindAnyObjectByType<playerMissilePerimeter>().ennemy[0];
             positionOfTargetToKill = target.transform.position;
         }
-        yield return new WaitForSeconds(1); StartCoroutine(FindTarget());
+        yield return new WaitForSeconds(0.5f); StartCoroutine(FindTarget());
     }
 }
