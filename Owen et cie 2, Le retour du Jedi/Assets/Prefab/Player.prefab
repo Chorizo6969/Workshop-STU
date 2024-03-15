@@ -110,7 +110,7 @@ MonoBehaviour:
   isSecondaryWeaponFire: 0
   secondaryWeaponRoloadCooldown: 0
   secondaryWeaponSpread: 0
-  secondWeaponId: 2
+  secondWeaponId: 0
   UltId: 1
   primaryWeaponProjectile: {fileID: 6841074670683464052, guid: 2b95c3f866850f244a3710ae9093b3a5, type: 3}
   secondaryWeaponProjectile: {fileID: 0}
@@ -221,3 +221,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ennemiKillCount: 0
   killForNextUlt: 0
+  border: {fileID: 0}
+  sprite_0: {fileID: 0}
+  sprite_1: {fileID: 0}
+  sprite_2: {fileID: 0}
+  sprite_3: {fileID: 0}
+  sprite_4: {fileID: 0}
