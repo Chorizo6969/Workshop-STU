@@ -3,6 +3,8 @@ using UnityEngine;
 public class entityLife : MonoBehaviour
 {
     public int life;
+    public GameObject panel_retry;
+    public Eventsystemnavigation loose;
 
     private void FixedUpdate()
     {
@@ -13,6 +15,8 @@ public class entityLife : MonoBehaviour
                 GetComponent<Ennemy>().OnDeath();
             }
             Destroy(gameObject);
+            loose.Change_WeaponsL2();
+            panel_retry.SetActive(true);
         }
     }
 }

@@ -23,5 +23,4 @@ public class Eventsystemnavigation : MonoBehaviour
         var eventSystem = EventSystem.current;
         eventSystem.SetSelectedGameObject(WeaponsL2, new BaseEventData(eventSystem));
     }
-
 }

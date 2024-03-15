@@ -136,6 +136,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 2000
+  panel_retry: {fileID: 0}
+  loose: {fileID: 0}
 --- !u!61 &8106863689854320765
 BoxCollider2D:
   m_ObjectHideFlags: 0

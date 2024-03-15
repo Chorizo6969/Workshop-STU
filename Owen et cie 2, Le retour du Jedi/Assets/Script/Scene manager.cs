@@ -20,5 +20,17 @@ public class Scenemanager : MonoBehaviour //Script pour gerer les différentes sc
     {
         SceneManager.LoadScene(Credits);
     }
+    public void Restart()
+    {
+        SceneManager.LoadScene("Level_1");
+    }
+    public void Main_Menu()
+    {
+        SceneManager.LoadScene("Start Menu");
+    }
+    public void Restart_2()
+    {
+        SceneManager.LoadScene("Level_2");
+    }
 
 }
