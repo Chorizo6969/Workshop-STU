@@ -1964,7 +1964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.8300171, y: 36.445007}
+  m_AnchoredPosition: {x: 0.8300781, y: 36.44507}
   m_SizeDelta: {x: -1004.32, y: -383.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &382213144
@@ -2162,7 +2162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.8300171, y: 36.445007}
+  m_AnchoredPosition: {x: 0.8300781, y: 36.44507}
   m_SizeDelta: {x: -1004.32, y: -383.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &405116090
@@ -2289,6 +2289,7 @@ GameObject:
   - component: {fileID: 439066159}
   - component: {fileID: 439066161}
   - component: {fileID: 439066160}
+  - component: {fileID: 439066162}
   m_Layer: 5
   m_Name: Wave 3
   m_TagString: Untagged
@@ -2354,6 +2355,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439066158}
   m_CullTransparentMesh: 1
+--- !u!95 &439066162
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439066158}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7056d5ca9d791b4a96480e98e9469bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &471335706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2980,6 +3002,7 @@ GameObject:
   - component: {fileID: 660972320}
   - component: {fileID: 660972322}
   - component: {fileID: 660972321}
+  - component: {fileID: 660972323}
   m_Layer: 5
   m_Name: Wave 2
   m_TagString: Untagged
@@ -3045,6 +3068,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660972319}
   m_CullTransparentMesh: 1
+--- !u!95 &660972323
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660972319}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7056d5ca9d791b4a96480e98e9469bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &664416188
 GameObject:
   m_ObjectHideFlags: 0
@@ -3502,6 +3546,7 @@ GameObject:
   - component: {fileID: 805219415}
   - component: {fileID: 805219417}
   - component: {fileID: 805219416}
+  - component: {fileID: 805219418}
   m_Layer: 5
   m_Name: Wave 1
   m_TagString: Untagged
@@ -3567,6 +3612,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805219414}
   m_CullTransparentMesh: 1
+--- !u!95 &805219418
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805219414}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7056d5ca9d791b4a96480e98e9469bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &820540554
 GameObject:
   m_ObjectHideFlags: 0
@@ -6472,7 +6538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouvement: {x: 0, y: 0, z: 0}
   speed: 5
-  killNeedForUlti: 10
+  killNeedForUlti: 8
   isPrimaryWeaponFire: 0
   primaryWeaponRoloadCooldown: 0.2
   primaryWeaponSpread: 5
@@ -6590,6 +6656,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ennemiKillCount: 0
   killForNextUlt: 0
+  border: {fileID: 189349204}
+  sprite_0: {fileID: 586640116, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
+  sprite_1: {fileID: 429098618, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
+  sprite_2: {fileID: 1252342414, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
+  sprite_3: {fileID: 1058615218, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
+  sprite_4: {fileID: -973728867, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
 --- !u!1 &1670537418
 GameObject:
   m_ObjectHideFlags: 0

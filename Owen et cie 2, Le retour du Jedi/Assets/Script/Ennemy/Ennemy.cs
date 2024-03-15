@@ -38,5 +38,6 @@ public class Ennemy : MonoBehaviour //Script qui gère le comportement de l'ennem
     public void OnDeath()
     {
         FindAnyObjectByType<killCount>().gameObject.GetComponent<killCount>().ennemiKillCount++;
+        FindAnyObjectByType<killCount>().gameObject.GetComponent<killCount>().ChangeSoriteUlti();
     }
 }
