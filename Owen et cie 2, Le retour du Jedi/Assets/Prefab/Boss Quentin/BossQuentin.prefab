@@ -201,9 +201,12 @@ GameObject:
   - component: {fileID: 1341260470231967076}
   - component: {fileID: 3643734286310550908}
   - component: {fileID: 6160522510466598235}
+  - component: {fileID: 8043810926782340675}
+  - component: {fileID: -5197836197480928821}
+  - component: {fileID: 8820008910420268260}
   m_Layer: 0
   m_Name: BossQuentin
-  m_TagString: Untagged
+  m_TagString: boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -299,6 +302,47 @@ MonoBehaviour:
   - {fileID: 5590471106246962312, guid: 5af766f3f7ed7134e9ab08bbb4fa6523, type: 3}
   - {fileID: 8514420886908366750, guid: 0e00401ed8c4a144ca5b25615f1a6f60, type: 3}
   - {fileID: 2032937851412380556, guid: bc82b39c64137cd43a379745f23c38fa, type: 3}
+--- !u!114 &8043810926782340675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5579138981359100360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57caab7f0b7eb33438305b80e108b33c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossPrefab: {fileID: 8962775200277228109, guid: c53f86c97352337479aecd324b35d823, type: 3}
+--- !u!114 &-5197836197480928821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5579138981359100360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25d29fe898f8cc445860404df5fc7d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 2000
+--- !u!114 &8820008910420268260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5579138981359100360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3efd7ac8948993d4cba7b32939b66248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Player
+  damage: 0
+  healthBarName: Health Quentin
 --- !u!1 &5895442841314054792
 GameObject:
   m_ObjectHideFlags: 0

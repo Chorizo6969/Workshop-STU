@@ -31,6 +31,8 @@ public class Control : MonoBehaviour
     public GameObject ultObject;
     public List<GameObject> ultObjectList;
 
+    public GameObject lifeBar;
+
     private void Start()
     {
         switch (secondWeaponId)
@@ -174,10 +176,5 @@ public class Control : MonoBehaviour
     {
         GameObject newMissile = Instantiate(secondaryWeaponProjectile);
         newMissile.transform.position = transform.position;
-    }
-
-    public void DebugLogTest()
-    {
-        Debug.Log("MEGA POMPE");
     }
 }

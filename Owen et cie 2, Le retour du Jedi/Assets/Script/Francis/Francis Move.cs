@@ -5,9 +5,10 @@ using UnityEngine;
 public class FrancisMove : MonoBehaviour
 {
     public float speed;
+    public Vector3 direction;
 
     void Update()
     {
-        transform.position += new Vector3(-1, -2, 0) * Time.deltaTime * speed;
+        transform.position += direction * Time.deltaTime * speed;
     }
 }

@@ -110,8 +110,8 @@ MonoBehaviour:
   isSecondaryWeaponFire: 0
   secondaryWeaponRoloadCooldown: 0
   secondaryWeaponSpread: 0
-  secondWeaponId: 1
-  UltId: 0
+  secondWeaponId: 0
+  UltId: 1
   primaryWeaponProjectile: {fileID: 6841074670683464052, guid: 2b95c3f866850f244a3710ae9093b3a5, type: 3}
   secondaryWeaponProjectile: {fileID: 0}
   projectilesList:
@@ -122,6 +122,7 @@ MonoBehaviour:
   ultObjectList:
   - {fileID: 463015281167062312, guid: 29d8f0e8ae6307941a2c7ac5b296963b, type: 3}
   - {fileID: 2306776389547284023, guid: e62546688d9efee4683723200feabc5f, type: 3}
+  lifeBar: {fileID: 3297363183788960659, guid: b45eb61b2b5eaf946871250b35736566, type: 3}
 --- !u!114 &2620213124674449438
 MonoBehaviour:
   m_ObjectHideFlags: 0

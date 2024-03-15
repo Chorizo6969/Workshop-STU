@@ -6,6 +6,7 @@ public class inflictdamage : MonoBehaviour
 {
     public string targetTag;
     public int damage;
+    public string healthBarName;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,7 +14,7 @@ public class inflictdamage : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        else if (collision.gameObject.tag == targetTag)
+        else if (collision.gameObject.tag == targetTag || (gameObject.tag == "playerProjectile" && collision.gameObject.tag == "boss"))
         {
             collision.gameObject.GetComponent<entityLife>().life -= damage;
             if (gameObject.name != "laser(Clone)" && gameObject.layer != 6)
@@ -24,7 +25,14 @@ public class inflictdamage : MonoBehaviour
 
         if (collision.gameObject.tag == "Player" && collision.gameObject.name == "Player" && gameObject.tag != "playerProjectile")
         {
-            FindAnyObjectByType<Life>().take_damages(damage);
+            GameObject.Find("Health").gameObject.GetComponentInChildren<Life>().take_damages(damage);
+        }
+
+        if (collision.gameObject.tag == "boss")
+        {
+            Debug.Log(gameObject.name);
+            var health = GameObject.Find(collision.gameObject.GetComponent<inflictdamage>().healthBarName).gameObject;
+            health.GetComponentInChildren<Life>().take_damages(damage);
         }
     }
 }
