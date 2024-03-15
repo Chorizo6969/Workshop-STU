@@ -9724,6 +9724,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player_id: {fileID: 3414200113556821508, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
   id_ulti: 0
+  Sprite_ulti1: {fileID: 0}
+  Sprite_ulti2: {fileID: 0}
 --- !u!1 &1652038143
 GameObject:
   m_ObjectHideFlags: 0
@@ -9872,6 +9874,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player_id: {fileID: 3414200113556821508, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
   id_ulti: 1
+  Sprite_ulti1: {fileID: 0}
+  Sprite_ulti2: {fileID: 0}
 --- !u!1 &1726896397
 GameObject:
   m_ObjectHideFlags: 0

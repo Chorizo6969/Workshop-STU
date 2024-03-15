@@ -222,6 +222,10 @@ MonoBehaviour:
   ennemiKillCount: 0
   killForNextUlt: 0
   border: {fileID: 0}
+  border_2: {fileID: 0}
+  Sprite_ulti1: {fileID: 0}
+  Sprite_ulti2: {fileID: 0}
+  ulti: {fileID: 0}
   sprite_0: {fileID: 0}
   sprite_1: {fileID: 0}
   sprite_2: {fileID: 0}
