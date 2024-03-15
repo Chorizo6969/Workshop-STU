@@ -16,7 +16,7 @@ public class homingMissile : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // Déterminez la direction du point cible par rapport à la position actuelle de l'objet
         Vector2 directionToTarget = new Vector2(positionOfTargetToKill.x, positionOfTargetToKill.y) - (Vector2)this.transform.position;
@@ -43,6 +43,12 @@ public class homingMissile : MonoBehaviour
             transform.position = _directionToGo;
         }
         lastTargetPosition = positionOfTargetToKill;
+
+        foreach (GameObject ennemy in FindAnyObjectByType<playerMissilePerimeter>().ennemy)
+        {
+            Ray ray = new Ray(transform.localPosition, ennemy.transform.localPosition);
+            Debug.DrawRay(transform.localPosition, ennemy.transform.localPosition - transform.localPosition, Color.red);
+        }
     }
 
     /*private void OnTriggerEnter2D(Collider2D collision)
@@ -57,7 +63,9 @@ public class homingMissile : MonoBehaviour
     {
         if (target == null)
         {
-            target = FindAnyObjectByType<Ennemy>().gameObject;
+            
+
+            target = FindAnyObjectByType<playerMissilePerimeter>().ennemy[0];
             positionOfTargetToKill = target.transform.position;
         }
         yield return new WaitForSeconds(1); StartCoroutine(FindTarget());

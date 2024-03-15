@@ -9,19 +9,18 @@ public class playerMissilePerimeter : MonoBehaviour
 
     private void Start()
     {
-        ennemy = new List<GameObject>();
+        //ennemy = new List<GameObject>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("COLLISION");
-        if (collision.gameObject.layer == 6)
+        if (collision.gameObject.tag == "ennemyThings")
         {
             ennemy.Add(collision.gameObject);
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         ennemy.Remove(collision.gameObject);
     }
