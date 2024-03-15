@@ -87,13 +87,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 807549734822276815, guid: b45eb61b2b5eaf946871250b35736566, type: 3}
+      propertyPath: Max_healthlife
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 1014232810552419527, guid: b45eb61b2b5eaf946871250b35736566, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 576.86304
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1014232810552419527, guid: b45eb61b2b5eaf946871250b35736566, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 203.99817
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1014232810552419527, guid: b45eb61b2b5eaf946871250b35736566, type: 3}
       propertyPath: m_LocalPosition.z
@@ -199,8 +203,8 @@ PrefabInstance:
       addedObject: {fileID: 2880079540635998950}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b45eb61b2b5eaf946871250b35736566, type: 3}
---- !u!4 &2482136326084942301 stripped
-Transform:
+--- !u!224 &2482136326084942301 stripped
+RectTransform:
   m_CorrespondingSourceObject: {fileID: 1014232810552419527, guid: b45eb61b2b5eaf946871250b35736566, type: 3}
   m_PrefabInstance: {fileID: 3197861985541111066}
   m_PrefabAsset: {fileID: 0}
