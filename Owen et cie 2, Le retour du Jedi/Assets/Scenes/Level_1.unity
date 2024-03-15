@@ -7884,14 +7884,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2409631985205066102, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
-      propertyPath: UltId
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2620213124674449438, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
-      propertyPath: life
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 3414200113556821508, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7937,10 +7929,6 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 5420074794725133372, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
-      propertyPath: ulti
-      value: 
-      objectReference: {fileID: 2134477879}
-    - target: {fileID: 5420074794725133372, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
       propertyPath: border
       value: 
       objectReference: {fileID: 189349204}
@@ -7948,26 +7936,6 @@ PrefabInstance:
       propertyPath: border_2
       value: 
       objectReference: {fileID: 1579048779}
-    - target: {fileID: 5420074794725133372, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
-      propertyPath: sprite_0
-      value: 
-      objectReference: {fileID: 586640116, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
-    - target: {fileID: 5420074794725133372, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
-      propertyPath: sprite_1
-      value: 
-      objectReference: {fileID: 429098618, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
-    - target: {fileID: 5420074794725133372, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
-      propertyPath: sprite_2
-      value: 
-      objectReference: {fileID: 1252342414, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
-    - target: {fileID: 5420074794725133372, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
-      propertyPath: sprite_3
-      value: 
-      objectReference: {fileID: 1058615218, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
-    - target: {fileID: 5420074794725133372, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
-      propertyPath: sprite_4
-      value: 
-      objectReference: {fileID: -973728867, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
     - target: {fileID: 5420074794725133372, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
       propertyPath: Sprite_ulti1
       value: 
