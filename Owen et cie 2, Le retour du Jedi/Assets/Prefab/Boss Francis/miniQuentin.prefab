@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2445180795804999153}
   - component: {fileID: 8918732136932994617}
   - component: {fileID: 6181555054366052452}
+  - component: {fileID: -6109706988992585706}
   m_Layer: 0
   m_Name: miniQuentin
   m_TagString: Untagged
@@ -98,8 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ae3a681db515e644bcf22e44fcd8efb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  direction: {x: 0, y: 0, z: 0}
+  speed: 1
+  direction: {x: -1, y: 0, z: 0}
 --- !u!114 &6181555054366052452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,3 +117,16 @@ MonoBehaviour:
   delay: 1
   timer: 0
   direction: {x: 0, y: 0, z: 0}
+--- !u!114 &-6109706988992585706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131910644647487534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae9cd12758bcb204abca4b1c737d3747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathCooldown: 15
