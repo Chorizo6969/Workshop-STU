@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8106863689854320765}
   - component: {fileID: 3365969566518759220}
   - component: {fileID: 5420074794725133372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
   secondaryWeaponRoloadCooldown: 0
   secondaryWeaponSpread: 0
   secondWeaponId: 1
-  UltId: 0
+  UltId: 1
   primaryWeaponProjectile: {fileID: 6841074670683464052, guid: 2b95c3f866850f244a3710ae9093b3a5, type: 3}
   secondaryWeaponProjectile: {fileID: 0}
   projectilesList:
@@ -188,14 +188,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3414200113556821508}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -206,7 +206,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &5420074794725133372
 MonoBehaviour:
   m_ObjectHideFlags: 0
