@@ -5,6 +5,8 @@ public class Scenemanager : MonoBehaviour //Script pour gerer les différentes sc
 {
     [SerializeField]
     public string sceneName;
+    [SerializeField]
+    public string Credits;
     public void QuitGame()
     {
         Application.Quit();
@@ -14,4 +16,9 @@ public class Scenemanager : MonoBehaviour //Script pour gerer les différentes sc
     {
         SceneManager.LoadScene(sceneName);
     }
+    public void CreditsScene()
+    {
+        SceneManager.LoadScene(Credits);
+    }
+
 }
