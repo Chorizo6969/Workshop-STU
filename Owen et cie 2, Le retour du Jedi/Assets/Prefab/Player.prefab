@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6492410412059598131
+--- !u!1 &3414200113556821508
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,13 +8,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3508256517158215537}
-  - component: {fileID: 7620701071514375857}
-  - component: {fileID: 6758190014245807965}
-  - component: {fileID: 816824746385753602}
-  - component: {fileID: 7392988058243818681}
-  - component: {fileID: 336910969507186300}
-  - component: {fileID: 5550039628243591319}
+  - component: {fileID: 3686943262243629853}
+  - component: {fileID: 9163077751694357629}
+  - component: {fileID: 2409631985205066102}
+  - component: {fileID: 2620213124674449438}
+  - component: {fileID: 8106863689854320765}
+  - component: {fileID: 3365969566518759220}
+  - component: {fileID: 5420074794725133372}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -22,28 +22,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3508256517158215537
+--- !u!4 &3686943262243629853
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6492410412059598131}
+  m_GameObject: {fileID: 3414200113556821508}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -7.1, y: 1.48, z: 0}
+  m_LocalPosition: {x: -6.31, y: -0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!212 &7620701071514375857
+--- !u!212 &9163077751694357629
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6492410412059598131}
+  m_GameObject: {fileID: 3414200113556821508}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -89,13 +89,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6758190014245807965
+--- !u!114 &2409631985205066102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6492410412059598131}
+  m_GameObject: {fileID: 3414200113556821508}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d29e17d72c3d46648adb2292e84466c7, type: 3}
@@ -103,15 +103,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouvement: {x: 0, y: 0, z: 0}
   speed: 5
-  killNeedForUlti: 8
+  killNeedForUlti: 3
   isPrimaryWeaponFire: 0
   primaryWeaponRoloadCooldown: 0.2
   primaryWeaponSpread: 5
   isSecondaryWeaponFire: 0
-  secondaryWeaponRoloadCooldown: 0.7
+  secondaryWeaponRoloadCooldown: 0
   secondaryWeaponSpread: 0
   secondWeaponId: 2
-  UltId: 0
+  UltId: 1
   primaryWeaponProjectile: {fileID: 6841074670683464052, guid: 2b95c3f866850f244a3710ae9093b3a5, type: 3}
   secondaryWeaponProjectile: {fileID: 0}
   projectilesList:
@@ -122,26 +122,26 @@ MonoBehaviour:
   ultObjectList:
   - {fileID: 463015281167062312, guid: 29d8f0e8ae6307941a2c7ac5b296963b, type: 3}
   - {fileID: 2306776389547284023, guid: e62546688d9efee4683723200feabc5f, type: 3}
---- !u!114 &816824746385753602
+--- !u!114 &2620213124674449438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6492410412059598131}
+  m_GameObject: {fileID: 3414200113556821508}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25d29fe898f8cc445860404df5fc7d70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 200
---- !u!61 &7392988058243818681
+  life: 100
+--- !u!61 &8106863689854320765
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6492410412059598131}
+  m_GameObject: {fileID: 3414200113556821508}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -164,7 +164,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -180,22 +180,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.93, y: 0.84}
   m_EdgeRadius: 0
---- !u!50 &336910969507186300
+--- !u!50 &3365969566518759220
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6492410412059598131}
-  m_BodyType: 0
+  m_GameObject: {fileID: 3414200113556821508}
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -206,14 +206,14 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &5550039628243591319
+  m_Constraints: 0
+--- !u!114 &5420074794725133372
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6492410412059598131}
+  m_GameObject: {fileID: 3414200113556821508}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c97e0319b6d021140b6dc68b3a1ccf96, type: 3}
@@ -221,9 +221,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ennemiKillCount: 0
   killForNextUlt: 0
-  border: {fileID: 0}
-  sprite_0: {fileID: 586640116, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
-  sprite_1: {fileID: 429098618, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
-  sprite_2: {fileID: 1252342414, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
-  sprite_3: {fileID: 1058615218, guid: de32de7a4d05a1443850c233df303ff5, type: 3}
-  sprite_4: {fileID: -973728867, guid: de32de7a4d05a1443850c233df303ff5, type: 3}

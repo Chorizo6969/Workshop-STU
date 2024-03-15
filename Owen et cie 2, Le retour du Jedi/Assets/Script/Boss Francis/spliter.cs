@@ -26,12 +26,12 @@ public class spliter : MonoBehaviour
         {
             GameObject newMiniInter1 = Instantiate(splitObject);
             newMiniInter1.transform.position = transform.position;
-            newMiniInter1.GetComponent<miniInterMove>().direction = direction + new Vector3(0, 0.5f, 0);
+            newMiniInter1.GetComponent<miniInterMove>().direction = new Vector3(-1, 0.5f, 0);
             newMiniInter1.GetComponent<miniInterMove>().speed = GetComponent<miniInterMove>().speed + 1;
 
             GameObject newMiniInter2 = Instantiate(splitObject);
             newMiniInter2.transform.position = transform.position;
-            newMiniInter2.GetComponent<miniInterMove>().direction = direction + new Vector3(0, -0.5f, 0);
+            newMiniInter2.GetComponent<miniInterMove>().direction = new Vector3(-1, -0.5f, 0);
             newMiniInter2.GetComponent<miniInterMove>().speed = GetComponent<miniInterMove>().speed + 1;
 
             hasSplit = true;
