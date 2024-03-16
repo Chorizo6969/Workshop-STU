@@ -28,9 +28,8 @@ public class inflictdamage : MonoBehaviour
             GameObject.Find("Health").gameObject.GetComponentInChildren<Life>().take_damages(damage);
         }
 
-        if (collision.gameObject.tag == "boss")
+        if (collision.gameObject.tag == "boss" && gameObject.tag == "playerProjectile")
         {
-            Debug.Log(gameObject.name);
             var health = GameObject.Find(collision.gameObject.GetComponent<inflictdamage>().healthBarName).gameObject;
             health.GetComponentInChildren<Life>().take_damages(damage);
         }

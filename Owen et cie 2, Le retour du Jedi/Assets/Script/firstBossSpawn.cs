@@ -8,12 +8,12 @@ public class firstBossSpawn : MonoBehaviour
     public List<GameObject> healthBar;
     public GameObject Destroy_song;
     public AudioSource Boss_song;
+    public GameObject blackScreen;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("ARRETE DE TE FOUTRE DE MA GUEULE");
             Destroy(Destroy_song);
             Boss_song.Play();
             Instantiate(bossSpawn);
@@ -24,6 +24,7 @@ public class firstBossSpawn : MonoBehaviour
                     go.SetActive(true);
                 }
             }
+            Destroy(gameObject);
         }
     }
 

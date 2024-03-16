@@ -67,6 +67,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 40
+  panel_retry: {fileID: 0}
+  loose: {fileID: 0}
 --- !u!114 &9211887836464525008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTag: Player
   damage: 10
+  healthBarName: 
 --- !u!61 &-2447124692374565715
 BoxCollider2D:
   m_ObjectHideFlags: 0

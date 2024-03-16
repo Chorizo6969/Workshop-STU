@@ -8,6 +8,7 @@ public class instantiateEnd : MonoBehaviour
 
     private void Start()
     {
-        
+        endObject = FindAnyObjectByType<Ending>().gameObject;
+        endObject.transform.position = new Vector3(8, 0, 0);
     }
 }

@@ -16,9 +16,4 @@ public class Ending : MonoBehaviour
             //Time.timeScale = 0; ;
         }
     }
-
-    public void FixedUpdate()
-    {
-        transform.Translate(Vector3.left * 2 * Time.deltaTime);
-    }
 }

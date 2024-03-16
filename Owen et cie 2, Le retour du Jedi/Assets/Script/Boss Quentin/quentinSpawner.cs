@@ -16,7 +16,7 @@ public class quentinSpawner : MonoBehaviour
    IEnumerator SpawnerRoutine()
     {
         GameObject newEnnemy = Instantiate(ennemyList[Random.Range(0,ennemyList.Count)]);
-        newEnnemy.transform.position = spawnerList[Random.Range(0, spawnerList.Count)].transform.position + new Vector3(3, 0, 0);
+        newEnnemy.transform.position = spawnerList[Random.Range(0, spawnerList.Count)].transform.position + new Vector3(-0.5f, 0, 0);
 
         yield return new WaitForSeconds(2.5f); StartCoroutine(SpawnerRoutine());
     }

@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: -4350019135576703954}
   - component: {fileID: 6831164722182009174}
   - component: {fileID: 519770432006319840}
+  - component: {fileID: 3391670196985470167}
   m_Layer: 0
   m_Name: Boss Francis
   m_TagString: boss
@@ -176,6 +177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 2000
+  panel_retry: {fileID: 0}
+  loose: {fileID: 0}
 --- !u!61 &6831164722182009174
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -236,3 +239,30 @@ MonoBehaviour:
   targetTag: Player
   damage: 0
   healthBarName: Health Francis
+--- !u!50 &3391670196985470167
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8962775200277228109}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

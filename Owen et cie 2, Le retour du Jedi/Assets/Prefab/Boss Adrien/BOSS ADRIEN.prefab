@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 7778694700487265138}
   - component: {fileID: 3547793367332378230}
   - component: {fileID: -8334645961526722209}
+  - component: {fileID: 5671923219135245237}
   m_Layer: 0
   m_Name: BOSS ADRIEN
   m_TagString: boss
@@ -179,6 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 2000
+  panel_retry: {fileID: 0}
+  loose: {fileID: 0}
 --- !u!61 &3547793367332378230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -239,3 +242,30 @@ MonoBehaviour:
   targetTag: Player
   damage: 0
   healthBarName: Health Adrien
+--- !u!50 &5671923219135245237
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867554612070157586}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
