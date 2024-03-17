@@ -110,8 +110,8 @@ MonoBehaviour:
   isSecondaryWeaponFire: 0
   secondaryWeaponRoloadCooldown: 0
   secondaryWeaponSpread: 0
-  secondWeaponId: 0
-  UltId: 1
+  secondWeaponId: 1
+  UltId: 0
   primaryWeaponProjectile: {fileID: 6841074670683464052, guid: 2b95c3f866850f244a3710ae9093b3a5, type: 3}
   secondaryWeaponProjectile: {fileID: 0}
   projectilesList:
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d29fe898f8cc445860404df5fc7d70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 2000
+  life: 200
   panel_retry: {fileID: 0}
   loose: {fileID: 0}
 --- !u!61 &8106863689854320765

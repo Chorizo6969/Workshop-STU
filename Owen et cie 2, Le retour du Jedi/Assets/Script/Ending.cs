@@ -13,7 +13,12 @@ public class Ending : MonoBehaviour
         {
             _playerInput.SwitchCurrentActionMap("MenuActionMap");
             panel_victory.SetActive(true);
-            //Time.timeScale = 0; ;
+            Time.timeScale = 0;
         }
+    }
+
+    public void FixedUpdate()
+    {
+        transform.Translate(Vector3.left * 2 * Time.deltaTime);
     }
 }

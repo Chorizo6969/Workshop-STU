@@ -19,6 +19,7 @@ public class entityLife : MonoBehaviour
             {
                 loose.Change_WeaponsL2();
                 panel_retry.SetActive(true);
+                Time.timeScale = 0;
             }
         }
     }
