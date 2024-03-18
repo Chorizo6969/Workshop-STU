@@ -39,16 +39,16 @@ public class killCount : MonoBehaviour
                 case 0:
                     border.GetComponent<Image>().sprite = sprite_0;
                     break;
-                case 2:
+                case 8:
                     border.GetComponent<Image>().sprite = sprite_1;
                     break;
-                case 4:
+                case 16:
                     border.GetComponent<Image>().sprite = sprite_2;
                     break;
-                case 6:
+                case 24:
                     border.GetComponent<Image>().sprite = sprite_3;
                     break;
-                case 8:
+                case 32:
                     border.GetComponent<Image>().sprite = sprite_4;
                     break;
                 default:
@@ -62,16 +62,16 @@ public class killCount : MonoBehaviour
                 case 0:
                     border_2.GetComponent<Image>().sprite = sprite_0;
                     break;
-                case 2:
+                case 8:
                     border_2.GetComponent<Image>().sprite = sprite_1;
                     break;
-                case 4:
+                case 16:
                     border_2.GetComponent<Image>().sprite = sprite_2;
                     break;
-                case 6:
+                case 24:
                     border_2.GetComponent<Image>().sprite = sprite_3;
                     break;
-                case 8:
+                case 32:
                     border_2.GetComponent<Image>().sprite = sprite_4;
                     break;
                 default:

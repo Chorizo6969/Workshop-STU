@@ -103,15 +103,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouvement: {x: 0, y: 0, z: 0}
   speed: 5
-  killNeedForUlti: 8
+  killNeedForUlti: 32
+  killCountText: {fileID: 8686643771841394910, guid: 25fd4e7be89cc0040b8c30f2992e1607, type: 3}
   isPrimaryWeaponFire: 0
   primaryWeaponRoloadCooldown: 0.2
   primaryWeaponSpread: 5
   isSecondaryWeaponFire: 0
   secondaryWeaponRoloadCooldown: 0
   secondaryWeaponSpread: 0
-  secondWeaponId: 1
-  UltId: 0
+  secondWeaponId: 0
+  UltId: 1
   primaryWeaponProjectile: {fileID: 6841074670683464052, guid: 2b95c3f866850f244a3710ae9093b3a5, type: 3}
   secondaryWeaponProjectile: {fileID: 0}
   projectilesList:

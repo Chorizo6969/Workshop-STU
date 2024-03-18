@@ -20,7 +20,6 @@ public class francistir : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 0.25) 
         {
-            Debug.Log("TIR");
             GameObject francisMissile = Instantiate(projectileFrancis);
             francisMissile.transform.position = spawnLocation.transform.position;
             timer = 0;

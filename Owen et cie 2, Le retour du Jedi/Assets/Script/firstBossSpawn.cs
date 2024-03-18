@@ -12,7 +12,7 @@ public class firstBossSpawn : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
             Destroy(Destroy_song);
             Boss_song.Play();

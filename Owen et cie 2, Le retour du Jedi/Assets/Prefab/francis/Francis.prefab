@@ -262,9 +262,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99da5066baf65db4881816e772779c8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 0}
+  missile: {fileID: 8600246270686660517, guid: c1c0bd6c17a0fbf40ba521f15a4665ba, type: 3}
   Synchro: 0
-  cooldown: 0
+  cooldown: 998998
   isfirstCouroutineStart: 0
   ennemy_speed: 0
 --- !u!114 &4891539138552434008

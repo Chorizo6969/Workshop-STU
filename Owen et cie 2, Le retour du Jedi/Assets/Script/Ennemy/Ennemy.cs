@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 public class Ennemy : MonoBehaviour //Script qui gère le comportement de l'ennemi 1
 {

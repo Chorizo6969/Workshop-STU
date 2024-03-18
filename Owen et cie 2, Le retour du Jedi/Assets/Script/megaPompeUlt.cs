@@ -11,7 +11,6 @@ public class megaPompeUlt : MonoBehaviour
     {
         for (int i = 0; i < 50; i++)
         {
-            Debug.Log(projectile);
             FindAnyObjectByType<Control>().instantiateProjectil(projectile, bigSpread);
         }
     }

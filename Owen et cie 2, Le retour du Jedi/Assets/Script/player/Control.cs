@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class Control : MonoBehaviour
 {
@@ -11,7 +13,9 @@ public class Control : MonoBehaviour
     public int speed;
     private float reloadTimerFisrtWeapon = 10;
     private float reloadTimeSecondWeapon = 10;
-    public int killNeedForUlti = 8;
+    public int killNeedForUlti = 32;
+
+    public TextMeshProUGUI killCountText;
 
     [SerializeField] private bool isPrimaryWeaponFire;
     public float primaryWeaponRoloadCooldown;
