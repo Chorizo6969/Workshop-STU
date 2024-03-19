@@ -9582,7 +9582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2620213124674449438, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
       propertyPath: life
-      value: 20000
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2620213124674449438, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
       propertyPath: loose
