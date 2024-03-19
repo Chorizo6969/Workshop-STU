@@ -56,20 +56,10 @@ public class homingMissile : MonoBehaviour
         }
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "ennemyThings")
-        {
-            Destroy(gameObject);
-        }
-    }*/
-
     IEnumerator FindTarget()
     {
-        Debug.Log("TROUVE UNE CBLE");
         if (target == null && FindAnyObjectByType<playerMissilePerimeter>().ennemy.Count >0)
         {
-            Debug.Log("J'Ai PAS DE CIBLE DONC JE CHERCHE");
 
             target = FindAnyObjectByType<playerMissilePerimeter>().ennemy[0];
             positionOfTargetToKill = target.transform.position;
