@@ -76,6 +76,7 @@ public class Control : MonoBehaviour
         if (callbackContext.started)
         {
             isStickUse = true;
+            Debug.Log("STAR MOVE");
         }
         if(callbackContext.canceled)
         {

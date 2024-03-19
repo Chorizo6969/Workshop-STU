@@ -1177,10 +1177,10 @@ MonoBehaviour:
     m_ActionId: 89684533-93a4-41b9-aed3-35f85c70b36a
     m_ActionName: MenuActionMap/Back[/XInputControllerWindows/buttonEast]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: MANETTE
+  m_DefaultControlScheme: 
   m_DefaultActionMap: inGameControle
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1356875445}
 --- !u!4 &215076848
 Transform:
   m_ObjectHideFlags: 0
