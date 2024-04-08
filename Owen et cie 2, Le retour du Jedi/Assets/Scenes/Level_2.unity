@@ -9647,11 +9647,11 @@ PrefabInstance:
     - target: {fileID: 5420074794725133372, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
       propertyPath: Sprite_ulti1
       value: 
-      objectReference: {fileID: 1048400391}
+      objectReference: {fileID: 878402283}
     - target: {fileID: 5420074794725133372, guid: 8a439b17e7f7f184291fa50f6fbf48b7, type: 3}
       propertyPath: Sprite_ulti2
       value: 
-      objectReference: {fileID: 724785223}
+      objectReference: {fileID: 1222056604}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

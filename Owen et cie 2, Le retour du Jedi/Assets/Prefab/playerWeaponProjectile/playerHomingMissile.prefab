@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc5807981c49d14694c4b2b79e884ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 7
   positionOfTargetToKill: {x: 0, y: 0, z: 0}
   lastTargetPosition: {x: 0, y: 0, z: 0}
   target: {fileID: 0}
@@ -190,5 +190,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: ennemyThings
-  damage: 10
+  damage: 50
   healthBarName: 

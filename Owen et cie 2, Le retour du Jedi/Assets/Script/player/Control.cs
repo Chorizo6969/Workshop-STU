@@ -55,7 +55,7 @@ public class Control : MonoBehaviour
 
             case 2:
                 secondaryWeaponProjectile = projectilesList[secondWeaponId];
-                secondaryWeaponRoloadCooldown = 1.5f;
+                secondaryWeaponRoloadCooldown = 1f;
                 secondaryWeaponSpread = 0;
                 break;
         }

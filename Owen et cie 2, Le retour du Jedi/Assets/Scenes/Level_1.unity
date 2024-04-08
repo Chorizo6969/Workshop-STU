@@ -1621,7 +1621,7 @@ MonoBehaviour:
   bossSpawn: {fileID: 2715044238409042511, guid: 891cffe390e997e46a63918c39530223, type: 3}
   healthBar: []
   Destroy_song: {fileID: 1404638172}
-  Boss_song: {fileID: 270055080}
+  Boss_song: {fileID: 241114863}
   blackScreen: {fileID: 1027733868}
 --- !u!61 &270055078
 BoxCollider2D:
