@@ -29,19 +29,4 @@ public class Life : MonoBehaviour //Script qui gère la vie du joueur, les degats
         slider.DOValue(Currenthealth, DOTweenSpeed).SetEase(functionName);
         StartCoroutine(Damages_Delay());
     }
-    public void Heal(int soin) //Fonction qui ajoute x pv a la vie du joueur
-    {
-        if (Currenthealth + soin <= Max_healthlife)
-        { 
-            Currenthealth += soin;
-            slider.DOValue(Currenthealth, 0.2f).SetEase(Ease.OutQuint); //Twin de la vie du joueur qui  permet pendant une transition de 0.2s d'augmenter la vie
-            //slider_latence.value = Currenthealth;
-        }
-        else if(Currenthealth + soin > Max_healthlife)
-        {
-            Currenthealth = Max_healthlife;
-            slider.DOValue(Currenthealth, 0.2f).SetEase(Ease.OutQuint);
-            slider_latence.value = Currenthealth;
-        }
-    }
 }
