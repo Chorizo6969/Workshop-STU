@@ -1647,7 +1647,7 @@ MonoBehaviour:
     m_ActionId: 89684533-93a4-41b9-aed3-35f85c70b36a
     m_ActionName: MenuActionMap/Back[/XInputControllerWindows/buttonEast]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: MANETTE
+  m_DefaultControlScheme: 
   m_DefaultActionMap: inGameControle
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 519420031}
@@ -6069,7 +6069,7 @@ Transform:
   m_GameObject: {fileID: 1158425099}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: 16.55, z: -0.111046836}
+  m_LocalPosition: {x: 8, y: 24.3, z: -0.111046836}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
